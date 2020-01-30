@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<title>Biomed Portal</title>
+<meta charset="utf-8">
+<meta name = "viewport" content="width=device-width">
+<meta name = "Description" content="GE Healthcare Biomed Web Portal">
+<meta name = "Author" content="DJM">
+<link rel="shortcut icon" type="image/png" href="gelogo.png"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
+<script src="scripts/modernizr.custom.05819.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>GE <span class="highlight">Precision</span> Healthcare</h1>
+    <nav>
+      <ul>
+        <li class="current"><a href="index.html">Portal</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section id="main">
+  <div class="container">
+    <h2 class="centered">Service Request Form:</h2>
+    <p class="centered"><em>Ensure all required fields are complete. Service requests are procesed in the order in which they are received. If this is a request for emergency service, please call us at (555) 555-1234. </em></p>
+    <div class="container">
+      <p id="notification" style="text-align: center; padding: 5px; border: 2px solid transparent">Fields marked with <span class="warn">*</span> are required.</p>
+      <form class="service-request-form" action="contactsphhelena.php" method="post">
+        <fieldset id="contactinfo">
+          <div class="row">
+            <div class="column25">
+              <label for="contact-name">Person Requesting Service: <span class="warn">*</span></label>
+            </div>
+            <div class="column75">
+              <input type="text" name="contact-name" placeholder="Name of Requestor" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25">
+              <label for="department">Building/Department: <span class="warn">*</span></label>
+            </div>
+            <div class="column75">
+              <input type="text" name="department" placeholder="Requestor's Building or Department" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25">
+              <label for="contact-phone">Contact Phone/Extension:</label>
+            </div>
+            <div class="column75">
+              <input type="text" name="contact-phone" placeholder="Contact Phone Number" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25">
+              <label for="contact-email">Contact Email:</label>
+            </div>
+            <div class="column75">
+              <input type="email" name="contact-email" placeholder="Your_Email@domain.com" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="equipmentinfo">
+          <div class="row">
+            <div class="column25">
+              <label for="device-type">Device Requiring Service: <span class="warn">*</span></label>
+            </div>
+            <div class="column75">
+              <input type="text" name="device-type" placeholder="Type of Device" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25">
+              <label for="device-location">Location of Device: <span class="warn">*</span></label>
+            </div>
+            <div class="column75">
+              <input type="text" name="device-location" placeholder="Device Location" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25">
+              <label for="device-id">Device Control Number:</label>
+            </div>
+            <div class="column75">
+              <input type="text" name="device-id" placeholder="Device Control Number" style="border: 2px solid #8A8A8A" required="required">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="description">
+          <div class="row">
+            <div class="column25">
+              <label for="device-problem">Description of Problem: <span class="warn">*</span></label>
+            </div>
+            <div class="column75">
+              <textarea name="device-problem" placeholder="Leave a detailed desciption of your device's malfunction." style="height:200px; border: 2px solid #8A8A8A" required="required"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column25"> </div>
+            <div class="column75">
+              <input type="submit" name="submit" id="contactbutton">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+</footer>
+</body>
+</html>
